@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html {background-color:rgb(188, 34, 226)}
+.whole { font-family: 'Lobster Two', cursive;
+     text-align:center;}
+body {background-color:rgb(234, 185, 253);
+     margin:0; padding:0;}
+header{ text-align:left; 
+    color:rgb(0, 0, 0)}
+.welcome{background-color:rgb(77, 2, 120);
+    color:seashell; 
+    padding:24px 16px; 
+    margin:16px; 
+    border-radius:8px;}
+.projects { display: flex; 
+    justify-content: space-between;
+    gap: 16px;
+    margin: 16px;
+    flex-wrap: wrap;}
+.work { background-color: rgb(255, 255, 255);
+    padding: 16px; 
+    border-radius: 8px; 
+    flex: 1 1 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
+@media (max-width: 767px) 
+{.projects { flex-direction: column; }
+ .work { flex: 1 1 100%; }}
+@media (min-width: 768px) and (max-width: 1199px) 
+{.work { flex: 1 1 calc(50% - 16px); }}
+@media (min-width: 1200px) 
+{.work { flex: 1 1 calc(33.333% - 16px); }}
+.image {color:black;
+    padding: 16px; 
+    border: 8px; 
+    margin: 16px 0; 
+    text-align:center;}
+#mc{ padding: 16px;
+     border: 8px; 
+     margin: 16px 0;}
+.navsection {background-color: rgb(188, 34, 226);
+     padding: 8px; 
+     text-align: center;}
+.control {background-color: rgb(188, 34, 226);
+     padding: 16px 16px 32px;
+      margin: 16px; 
+      border-radius: 8px;}
+main {padding-bottom: 16px;}
+h1, h2 {margin-top: 0;}
+.image {margin: 16px; 
+    padding: 16px; 
+    background-color: rgb(188, 34, 226); 
+    border-radius: 8px;}
