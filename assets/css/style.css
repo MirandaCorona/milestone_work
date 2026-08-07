@@ -37,7 +37,7 @@ header{ text-align:left;
 #mc{ padding: 16px;
      border: 8px; 
      margin: 16px 0;}
-.navsection {background-color: rgb(188, 34, 226);
+.navsection {background-color: rgb(253, 253, 253);
      padding: 8px; 
      text-align: center;
     font-size: 18px;
@@ -54,5 +54,4 @@ main {padding-bottom: 16px;}
 h1, h2 {margin-top: 0;}
 .image {margin: 16px; 
     padding: 16px; 
-    background-color: rgb(188, 34, 226); 
     border-radius: 8px;}
