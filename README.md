@@ -3,3 +3,5 @@ A few alerts went off regarding contrast. I updated the link background for bett
 The last change was an addition of a contact me form or box that is directed to my student email. to my understanding the button works.
 I have used proximity with my .navsection because all of my naviagtion links are locaated here. I also updated the spacing between words.
 I have used figure/ground by changing the nav background to white for better visualbility. 
+
+I added a phone number box in the form and removed required to prevent error messages. 
