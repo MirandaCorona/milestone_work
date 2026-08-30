@@ -3,13 +3,17 @@
 <head>
     <title>My Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
+      <script src="assets/scripts/script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav class="navsection">
-            <a href="index.html">Home</a>
-            <a href="assets/pages/work.html">Projects</a>
-            <a href="assets/pages/about.html">About</a>
+        <nav class="navsection" aria-label="Main navigation">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
+            <div id="mainNav" class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="assets/pages/work.html">Projects</a>
+                <a href="assets/pages/about.html">About</a>
+            </div>
         </nav>
     </header>
 
@@ -29,6 +33,10 @@
             <p>In the Projects section, you will find a collection of my work and accomplishments. For this project, Milestone 1, I attached a hand-drawn wireframe.</p>
         </section>
 
+        <section class="control">
+            <h2>Fun Fact</h2>
+            <p id="funFact">Hakuna Matata means no worries.</p>
+        </section>
 
     </main>
 

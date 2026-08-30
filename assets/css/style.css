@@ -42,6 +42,23 @@ header{ text-align:left;
      text-align: center;
     font-size: 18px;
     font-weight: bold;}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.nav-toggle {
+    display: none;
+    margin: 0 auto 12px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(77, 2, 120);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
 .control {background-color: rgb(221, 113, 249);
      padding: 16px 16px 32px;
       margin: 24px; 
@@ -66,4 +83,49 @@ h1, h2 {margin-top: 0;}
          margin: 8px;
          text-align: center; 
                 }
+
+.field-error {
+    min-height: 20px;
+    margin: 4px 0 12px;
+    color: #8b1e1e;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.form-status {
+    min-height: 20px;
+    margin: 12px 0;
+    font-weight: bold;
+}
+
+.form-status.error {
+    color: #8b1e1e;
+}
+
+.form-status.success {
+    color: #0d6b2a;
+}
+
+input.invalid,
+textarea.invalid {
+    border: 2px solid #8b1e1e;
+    background-color: #fff3f3;
+}
+
+@media (max-width: 767px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        padding: 8px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+}
     
