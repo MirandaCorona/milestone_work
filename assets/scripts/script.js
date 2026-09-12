@@ -10,6 +10,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const funFactSection = document.querySelector('#funFactSection');
+  const funFact = document.querySelector('#funFact');
+  const funFactText = 'Hakuna Matata means no worries.';
+
+  if (funFactSection && funFact) {
+    const showFunFact = () => {
+      funFact.textContent = funFactText;
+    };
+
+    funFactSection.addEventListener('click', showFunFact);
+    funFactSection.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        showFunFact();
+      }
+    });
+  }
+
   const form = document.querySelector('#contactForm');
 
   if (!form) {
@@ -96,22 +114,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  const funFact = document.querySelector('#funFact');
-
-  if (funFact) {
-    fetch('https://api.quotable.io/random')
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Quote request failed');
-        }
-        return response.json();
-      })
-      .then(() => {
-        funFact.textContent = 'Hakuna Matata means no worries.';
-      })
-      .catch((error) => {
-        console.error('Fetch error:', error);
-        funFact.textContent = 'Unable to load the quote right now.';
-      });
-  }
 });
