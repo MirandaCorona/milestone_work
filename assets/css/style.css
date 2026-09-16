@@ -1,12 +1,21 @@
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-</style>
+
+* {
+    box-sizing: border-box;
+}
+
 html {background-color:rgb(188, 34, 226)}
 .whole { font-family: 'Manrope', sans-serif;
      text-align:center;
    font-weight: bold;}
 body {background-color:rgb(234, 185, 253);
-     margin:0; padding:0;}
+     margin:0; padding:0;
+     max-width: 100%;
+     overflow-x: hidden;}
+img {
+    max-width: 100%;
+    height: auto;
+}
 header{ text-align:left; 
     color:rgb(0, 0, 0)}
 .welcome{background-color:rgb(77, 2, 120);
@@ -37,7 +46,15 @@ header{ text-align:left;
 @media (max-width: 767px) 
 {.projects { flex-direction: column; }
  .work { flex: 1 1 100%; }
- .work img { max-width: 100%; width: min(100%, 420px); }}
+ .work img { max-width: 100%; width: min(100%, 420px); }
+ .control {
+    margin: 12px 8px;
+    padding: 14px 12px 18px;
+ }
+ .nav-links {
+    width: 100%;
+ }
+}
 @media (min-width: 768px) and (max-width: 1199px) 
 {.work { flex: 1 1 calc(50% - 16px); }}
 @media (min-width: 1200px) 
