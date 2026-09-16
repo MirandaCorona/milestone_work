@@ -24,9 +24,20 @@ header{ text-align:left;
     border-radius: 8px; 
     flex: 1 1 30%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
+
+.work img {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 12px auto 0;
+    border-radius: 8px;
+}
+
 @media (max-width: 767px) 
 {.projects { flex-direction: column; }
- .work { flex: 1 1 100%; }}
+ .work { flex: 1 1 100%; }
+ .work img { max-width: 100%; width: min(100%, 420px); }}
 @media (min-width: 768px) and (max-width: 1199px) 
 {.work { flex: 1 1 calc(50% - 16px); }}
 @media (min-width: 1200px) 
